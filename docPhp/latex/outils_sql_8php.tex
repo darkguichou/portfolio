@@ -1,0 +1,199 @@
+\hypertarget{outils_sql_8php}{}\section{modeles/portail/outils\+Sql.php File Reference}
+\label{outils_sql_8php}\index{modeles/portail/outils\+Sql.\+php@{modeles/portail/outils\+Sql.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}{connexion} ()
+\begin{DoxyCompactList}\small\item\em connexion à la base de données \end{DoxyCompactList}\item 
+\hyperlink{outils_sql_8php_a7da8dba0c25ef6aa16108c2c0c2b222b}{requete\+Exe} (\$\hyperlink{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}{connexion}, \$requete)
+\item 
+\hyperlink{outils_sql_8php_a30824712094ef4c06d47ac4079dc16e3}{verif\+User\+Exist} (\$\hyperlink{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}{connexion}, \$pseudo)
+\item 
+\hyperlink{outils_sql_8php_a1eb7dbe3c18741b9accd1adac3d3d79e}{test\+Mdp} (\$\hyperlink{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}{connexion}, \$pseudo, \$mdp)
+\item 
+\hyperlink{outils_sql_8php_a7a9cf81142b4c4049ff0d0f9514312a6}{verif\+Num\+Cli} (\$num\+Cli)
+\item 
+\hyperlink{outils_sql_8php_a875d4fa49c5c99a24bced46df73bb67a}{stock\+Mdp} (\$co, \$mdp, \$num\+Cli)
+\item 
+\hyperlink{outils_sql_8php_a78a40e5cb223d04ab049dcf5cdcfcc0c}{hash\+Mdp} (\$mdp)
+\item 
+\hyperlink{outils_sql_8php_a619559f035ecbbb67411935113c9189f}{verif\+Inscrit} ()
+\item 
+\hyperlink{outils_sql_8php_a2c7e35b8ac11be4f7546958378797ded}{insert\+Mail} (\$id, \$mail)
+\item 
+\hyperlink{outils_sql_8php_a75e29b57fd98aeb0976aedb22431a42f}{insert\+Pass} (\$id, \$mdp)
+\item 
+\hyperlink{outils_sql_8php_add4bc70c76831581951cffe168ab075f}{select\+Type} (\$id)
+\item 
+\hyperlink{outils_sql_8php_ac0ff3db184d1d4931ecc034dc9904f69}{check\+Inscrit} (\$id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Benoit \begin{DoxyDate}{Date}
+12 février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Le fichier {\bfseries \hyperlink{outils_sql_8php}{outils\+Sql.\+php}} contient plusieurs outils de configuration du site. 
+
+\subsection{Function Documentation}
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!check\+Inscrit@{check\+Inscrit}}
+\index{check\+Inscrit@{check\+Inscrit}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{check\+Inscrit(\$id)}{checkInscrit($id)}}]{\setlength{\rightskip}{0pt plus 5cm}check\+Inscrit (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_ac0ff3db184d1d4931ecc034dc9904f69}{}\label{outils_sql_8php_ac0ff3db184d1d4931ecc034dc9904f69}
+Fonction qui vérifie que l\textquotesingle{}utilisateur est bien inscrit. 
+
+Definition at line 204 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!connexion@{connexion}}
+\index{connexion@{connexion}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{connexion()}{connexion()}}]{\setlength{\rightskip}{0pt plus 5cm}connexion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}{}\label{outils_sql_8php_a72636d5958b9e74f0bf44d4f8088036e}
+
+
+connexion à la base de données 
+
+La fonction se connecte à la base de données 
+\begin{DoxyParams}{Parameters}
+{\em host} & host désigne l\textquotesingle{}adresse du serveur d\textquotesingle{}hébergement \\
+\hline
+{\em db\+Name} & db\+Name désigne le nom de la base de données \\
+\hline
+{\em user} & user désigne le nom utilisateur \\
+\hline
+{\em pwd} & pwd désigne le mot de passe de connexion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\bfseries connexion} renvoi une connexion à la base de données. Cet outil permet de se connecter à la B\+DD à chaque fois qu\textquotesingle{}une fonction en a besoin sans avoir à réécrire les infos nécessaire à la connexion. 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!hash\+Mdp@{hash\+Mdp}}
+\index{hash\+Mdp@{hash\+Mdp}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{hash\+Mdp(\$mdp)}{hashMdp($mdp)}}]{\setlength{\rightskip}{0pt plus 5cm}hash\+Mdp (
+\begin{DoxyParamCaption}
+\item[{}]{\$mdp}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a78a40e5cb223d04ab049dcf5cdcfcc0c}{}\label{outils_sql_8php_a78a40e5cb223d04ab049dcf5cdcfcc0c}
+Fonction qui hashe le mot de passe rentré en parmaètre et retourne ce dernier hashé. 
+
+Definition at line 138 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!insert\+Mail@{insert\+Mail}}
+\index{insert\+Mail@{insert\+Mail}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{insert\+Mail(\$id, \$mail)}{insertMail($id, $mail)}}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Mail (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$mail}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a2c7e35b8ac11be4f7546958378797ded}{}\label{outils_sql_8php_a2c7e35b8ac11be4f7546958378797ded}
+Fonction qui met à jour l\textquotesingle{}adresse mail de l\textquotesingle{}utilisateur. 
+
+Definition at line 169 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!insert\+Pass@{insert\+Pass}}
+\index{insert\+Pass@{insert\+Pass}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{insert\+Pass(\$id, \$mdp)}{insertPass($id, $mdp)}}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Pass (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$mdp}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a75e29b57fd98aeb0976aedb22431a42f}{}\label{outils_sql_8php_a75e29b57fd98aeb0976aedb22431a42f}
+Fonction qui met à jour le mot de passe de l\textquotesingle{}utilisateur. 
+
+Definition at line 179 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!requete\+Exe@{requete\+Exe}}
+\index{requete\+Exe@{requete\+Exe}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{requete\+Exe(\$connexion, \$requete)}{requeteExe($connexion, $requete)}}]{\setlength{\rightskip}{0pt plus 5cm}requete\+Exe (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$requete}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a7da8dba0c25ef6aa16108c2c0c2b222b}{}\label{outils_sql_8php_a7da8dba0c25ef6aa16108c2c0c2b222b}
+Fonction qui éxécute des requêtes sql rentrée en paramètre. 
+
+Definition at line 43 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!select\+Type@{select\+Type}}
+\index{select\+Type@{select\+Type}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{select\+Type(\$id)}{selectType($id)}}]{\setlength{\rightskip}{0pt plus 5cm}select\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_add4bc70c76831581951cffe168ab075f}{}\label{outils_sql_8php_add4bc70c76831581951cffe168ab075f}
+Fonction qui selectionne le type d\textquotesingle{}utilisateur, pour ouvrir une session différenciée. 
+
+Definition at line 189 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!stock\+Mdp@{stock\+Mdp}}
+\index{stock\+Mdp@{stock\+Mdp}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{stock\+Mdp(\$co, \$mdp, \$num\+Cli)}{stockMdp($co, $mdp, $numCli)}}]{\setlength{\rightskip}{0pt plus 5cm}stock\+Mdp (
+\begin{DoxyParamCaption}
+\item[{}]{\$co, }
+\item[{}]{\$mdp, }
+\item[{}]{\$num\+Cli}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a875d4fa49c5c99a24bced46df73bb67a}{}\label{outils_sql_8php_a875d4fa49c5c99a24bced46df73bb67a}
+Fonction qui enregistre le mot de passe unique par utilisateur. 
+
+Definition at line 125 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!test\+Mdp@{test\+Mdp}}
+\index{test\+Mdp@{test\+Mdp}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{test\+Mdp(\$connexion, \$pseudo, \$mdp)}{testMdp($connexion, $pseudo, $mdp)}}]{\setlength{\rightskip}{0pt plus 5cm}test\+Mdp (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$pseudo, }
+\item[{}]{\$mdp}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a1eb7dbe3c18741b9accd1adac3d3d79e}{}\label{outils_sql_8php_a1eb7dbe3c18741b9accd1adac3d3d79e}
+Fonction qui vérifie l\textquotesingle{}éxistance d\textquotesingle{}un couple nom d\textquotesingle{}utilisateur et mot de passe rentré en paramète dans la base de donnée. 
+
+Definition at line 77 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!verif\+Inscrit@{verif\+Inscrit}}
+\index{verif\+Inscrit@{verif\+Inscrit}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{verif\+Inscrit()}{verifInscrit()}}]{\setlength{\rightskip}{0pt plus 5cm}verif\+Inscrit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a619559f035ecbbb67411935113c9189f}{}\label{outils_sql_8php_a619559f035ecbbb67411935113c9189f}
+Fonction qui vérifie si l\textquotesingle{}utilisateur est présent dans la base de données. 
+
+Definition at line 148 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!verif\+Num\+Cli@{verif\+Num\+Cli}}
+\index{verif\+Num\+Cli@{verif\+Num\+Cli}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{verif\+Num\+Cli(\$num\+Cli)}{verifNumCli($numCli)}}]{\setlength{\rightskip}{0pt plus 5cm}verif\+Num\+Cli (
+\begin{DoxyParamCaption}
+\item[{}]{\$num\+Cli}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a7a9cf81142b4c4049ff0d0f9514312a6}{}\label{outils_sql_8php_a7a9cf81142b4c4049ff0d0f9514312a6}
+Fonction qui vérifie l\textquotesingle{}existance du numéro client 
+
+Definition at line 101 of file outils\+Sql.\+php.
+
+\index{outils\+Sql.\+php@{outils\+Sql.\+php}!verif\+User\+Exist@{verif\+User\+Exist}}
+\index{verif\+User\+Exist@{verif\+User\+Exist}!outils\+Sql.\+php@{outils\+Sql.\+php}}
+\subsubsection[{\texorpdfstring{verif\+User\+Exist(\$connexion, \$pseudo)}{verifUserExist($connexion, $pseudo)}}]{\setlength{\rightskip}{0pt plus 5cm}verif\+User\+Exist (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$pseudo}
+\end{DoxyParamCaption}
+)}\hypertarget{outils_sql_8php_a30824712094ef4c06d47ac4079dc16e3}{}\label{outils_sql_8php_a30824712094ef4c06d47ac4079dc16e3}
+Fonction qui vérifie l\textquotesingle{}éxistance d\textquotesingle{}un nom d\textquotesingle{}utilisateur entré en paramètre dans la base de donnée. 
+
+Definition at line 54 of file outils\+Sql.\+php.
+

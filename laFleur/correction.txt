@@ -1,0 +1,19 @@
+LAFLEUR - Lot 3
+---------------
+
+Respect cahier des charges sur 10 pts : 9
+Manques ou défauts :
+ - pas d'affichage des prix et montants dans le panier (cf. capture jointe)
+
+Eléments internes au projet :
+ - qualité HTML/CSS sur 2 : 2
+ - qualité code PHP/SQL sur 4 : 3 (pas de page pour chaque catégorie, faire une seule fonction paramétrée)
+ - respect planning fourni sur 2 : 0 (pas de planning fourni)
+ - plan de tests et rapports sur 2 : 0 (ni plan ni rapports de tests)
+ 
+TOTAL sur 20 : 14
+ 
+Pondération SVN :
+ - Le Bellego : -- (mettez des commentaires à vos commits !!)
+ - Lechellon : -- (veillez à faire participer vos collègues)
+ - Morant : -5 (aucune participation)
