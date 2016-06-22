@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+
+          function grandir(i, j, n) {
+
+            document.getElementsByClassName("imgAncre")[i].style.width = "10%";
+            document.getElementsByClassName("imgAncre")[j].style.width = "10%";
+            document.getElementsByClassName("ancre")[n].style.fontSize = "28px";
+            document.getElementsByClassName("ancre")[n].style.marginLeft = "30%";
+
+          }
+
+          function retressir(i, j, n) {
+
+            document.getElementsByClassName("imgAncre")[i].style.width = "5%";
+            document.getElementsByClassName("imgAncre")[j].style.width = "5%";
+            document.getElementsByClassName("ancre")[n].style.fontSize = "20px";
+            document.getElementsByClassName("ancre")[n].style.marginLeft = "38%";
+          }
+        </script>
+
+        <title>Tutoriel de prise en main de l'interface d'administration du site de l'APF Guillaume d'Achon</title>
+    </head>
+    <body>
+
+      <header>
+      <img class ="logo" src="images/logo-APF.jpg"></img>
+      <h1>Tutoriel de prise en main de l'interface d'administration du site de l'APF Guillaume d'Achon</h1>
+      
+      
+      </header>
+      <div class="bande"> </div>
+
+      <div class="main">
+        <div class="introduction">
+
+          <p class="tec"> TRAVAIL EN COURS <img src="http://www.otakia.com/wp-content/uploads/2011/08/warcraft_gnome.jpg" class="screen3"</p>
+        
+           <h2>Introduction:</h2> <p>Ce tutoriel a pour but de permettre l'utilisation de l'interface d'administration du site de l'APF Guillaume 
+            d'achon par ses résidents.</p> 
+      
+        </div>
+
+        <div class="sommaire">
+
+          <h3 id="sommaire"> Sommaire: </h3>
+
+          <ul> <li> Présentation générale </li>
+               <li> Partie 1: Accès au panneau d'administration du site</li>
+               <li> Partie 2:  Présentation des différentes fonctionnalités de l'interface d'administration </li>
+               <li> Partie 3: </li>
+               <li> Partie 4: </li>
+               <li> Conclusion</li>
+          
+          </ul>
+      
+          <p>Notez qu'à chaque fin de partie, il y aura un lien qui vous permetrra de revenir au sommaire, ces liens sont facilement reconnaissable car il  sont accompagnés de marios!</p>
+      
+        </div>
+
+        <div class="presentation">
+        
+          <h3> Présentation générale </h3>
+
+          <div class="question"><img class ="interogation" src="images/unknown-31209_640.png"></img><p>"C'est quoi une interface d'administration?"</p></div>
+          <p>Pour répondre à cette question il  va falloir nous  poser deux autres questions...</p>
+          <div class="question"><img class ="interogation" src="images/unknown-31209_640.png"></img><p>"C'est quoi une interface?"</p></div>
+          <div class="reponse"><img class ="ampoule" src="images/ampoule.jpg"></img><p>En informatique on parle plus spécialement d'interface homme-machine.
+            <br/>
+            <br/>
+            
+            <img src="images/ihm.png"></img>
+            </br>
+              Les humains et les machines (ordinateur) ne parlant pas le même langage, il a fallut trouver une solution pour que les                       personnes ne connaissant pas le langage machine puissent communiquer avec les ordinateurs quand même. On a donc inventé des                  interfaces homme-machine pour  permettre à tout le monde de pouvoir utiliser un ordinateur. Un exemple d'interface homme-                    machine est windows... et oui vous utilisez déjà des interces homme machine sans le savoir. </p></div>
+          <p><strong>Et</strong></p>
+          <div class="question"><img class ="interogation" src="images/unknown-31209_640.png"></img><p>"C'est quoi l'administration?"
+          </p></div>
+
+          <div class="reponse"><img class ="ampoule" src="images/ampoule.jpg"></img><p>L'administration en informatique c'est le fait de possèder des  accès supérieurs aux autres utilisateurs               permettant la gestion et l'organisation.</p></div>
+
+          <div class="conclusion"><img class="conc" src="images/flecheRouge.png"></img><p>Une interface d'administration est donc un système qui permet la communication entre l'humain et la                machine pour gérer, organiser. On va maintenant pouvoir passer aux choses intéressantes: l'utilisation du l'interface                        d'administration du site internet.</p></div>
+          </br>
+          <div class="ancreB" onmouseover="grandir(0, 1, 0)" onmouseout="retressir(0, 1, 0)" ><a class="ancre" href="tutorielSiteApf.html#sommaire"><img class="imgAncre" src="images/tuyauMario.jpg"></img>Retour vers le sommaire<img class="imgAncre" src="images/tuyauMario.jpg"></img></a></div>
+          
+          <div class=" = partie1">
+          
+          <h3>Partie 1: Accès au panneau d'administration du site.</h3>
+
+            <p>On va voire dans cette partie comment accèder à l'interface d'administration du site internet. Ce qui va permettre de faire                des modifications sur le site.</p>
+
+            <h4>Etape 1: Aller sur  le site de l'AFP</h4>
+
+            <p>Ouvrez votre navigateur internet préféré...
+              <br/>
+              <img class ="logo" src="images/firefox.png"></img> <img class="logo" src="images/internetExplorer.jpg"></img><img class="logo"                src="images/googleChrome.jpg"></img> <img class= "logo" src="images/safari.jpg"></img> <img class="logo" src="images/opera.jpg"></img>
+              <br/>
+              Nous allons utiliser ici Mozzila firefox:
+              <br/>
+              <br/>
+              <img class="screen" src="images/p1e1.png" data-zoom-image="images/p1e1.png" ></img>
+              
+            </p>
+            <p>
+            Ensuite nous allons aller tout simplement sur le site de l'afp guillaume d'achon comme sur l'image en dessous en rentrant                 directement l'url du site lui même (<a href="http://www.foyer-guillaume-dachon.fr/">http://www.foyer-guillaume-dachon.fr/</a>) . 
+            </p>
+            <img class="screen" src="images/p1e1b.png"></img>
+
+            <h4>Etape 2: modification de l'url</h4>
+
+            <p>Pour avoir accès à l'interface d'administration il faut rajouter /administration à la fin de l'url du site internet située en                haut dans la barre d'url.</p>
+            <img class="screen" src="images/p1e2.png"></img>
+
+            <br/>
+
+            <p>Normalement vous devriez sur la page suivante:
+            <br/>
+            <br/>
+              Si vous voulez retourner sur le site internet vous pouvez tout simplement cliquer sur "visualiser le site" comme indiqué sur                  l'impression d'écran en dessous.
+            
+            </p>
+
+            <br/>
+
+            <img class="screen" src="images/p1e2a.png"></img>
+
+            <h4>Etape 3: S'identifier sur l'interface d'administration</h4>
+
+            <div class="question"><img class ="interogation" src="images/unknown-31209_640.png"><p>"C'est quoi s'identifier?"</p></div>
+
+            <div class="reponse"><img class ="ampoule" src="images/ampoule.jpg"></img><p> Certaines applications, services sont protégés, seule les personnes autorisées peuvent y accéder. Il                   faut donc vérifier l'identitée de la personne, c'est ça qu'on appel l'identification. Généralement en informatique                           l'identification se fait gràce à un identifiant (votre nom, votre adresse mail, ...) et un mot de passe (que seul vous                       connaissez). Pour résumer l'identifiaction permet que seul les personnes qui sont autorisée à accéder à une application y                    accéde.  </p></div>
+
+            <p>l'identification se fait en 3 étapes:
+                <ul>
+                    <li><div class="numero"> 1 </div> : Entrer le mail </li>
+                    <li><div class="numero"> 2 </div> : Entrer le mot de passe </li>
+                    <li><div class="numero"> 3 </div> : Cliquer sur valider </li>
+                
+                </ul>
+
+              Ces étapes sont illustrées sur l'impression d'écran en dessous.
+            </p>
+
+            <img class="screen" src="images/p1e3.png"></img>
+
+            <p> Si vous avez suivi toute les étapes pas à pas et que tout c'est bien passé, vous devriez arriver sur la page suivante: </p>
+
+            <img class="screen" src="images/p1e3b.png"></img>
+
+            <br/>
+            <br/>
+
+            <p> Comme vous avez pu le deviner on est bien arrivé sur l'interface d'administration ... enfin. Nous verrons dans la partie                      suivante les différentes fonctionnalités de cette interface d'administration.</p>
+          
+            <div class="ancreB" onmouseover="grandir(2, 3, 1)" onmouseout="retressir(2, 3, 1)" ><a class="ancre" href="tutorielSiteApf.html#sommaire"><img class="imgAncre" src="images/tuyauMario.jpg"></img>Retour vers le sommaire<img class="imgAncre" src="images/tuyauMario.jpg"></img></a></div>
+          </div>
+
+
+          <div class="partie2">
+          
+          <h3> Partie 2 : Présentation des différentes fonctionnalités de l'interface d'administration </h3>
+
+            <p> Nous allons voir ici les différentes fonctionnalités de l'interface d'administration.</p>
+          
+          <h4> 1: Le bandeau du haut </h4>
+
+            <img class="screen" src="images/p2e1.png"></img>
+
+
+            <p>Il y a 3 options importantes dans ce bandeau du haut (zone entourée par le cadre vert sur l'image au dessus):</p>
+
+                  <ul>
+                    <li><div class="numero"> 1 </div> : Permet de modifier le mot de passe pour s'identifier sur l'interface d'administration. </li>
+                    <li><div class="numero"> 2 </div> : Permet d'accèder au manuel de l'interface d'administration fournit par le créateur du site. </li>
+                    <li><div class="numero"> 3 </div> : Permet de se déconnecter et de revenir à la page de connexion où vous vous êtes identifié. </li>
+                
+                </ul>
+
+            <h4> 2: bandeau du côté gauche </h4>
+
+            
+          <img class="screen2" src="images/p2e2.png"></img>
+
+          <p class="deCote">Voici le bandeau situé sur le coté à gauche, on retrouve ici 3 options intéressantes:
+            <br/>
+
+          </p>
+          
+
+             <ul>
+                    <li><div class="numero"> 1 </div> : Permet d'accéder à la section "images à la une" dont nous parlerons plus tard.</li>
+                    <li><div class="numero"> 2 </div> : Permet d'accèder à la section contenu  du site, c'est  la partie la plus importante, nous y reviendrons  plus tard également.</li>
+                    <li><div class="numero"> 3 </div> : Permet de voire les modifications faites en ouvrant le site dans un nouvel onglet. </li>
+                
+                </ul>
+
+            <h4>3: Bandeau du bas</h4>
+
+            <img class="screen" src="images/p2e3.png"></img>
+            <p>Ici nous avons deux informations intéressantes, la version du CMS utilisé par l'entreprise à gauche et les coordonées permettant de contacer l'entreprise droite (numéro de téléphone et adresse mail.</p>
+            <div class="question"> Mais c'est quoi un CMS? </div>
+            <div class="reponse">CMS signifie "content management system", c'est à dire système de management de contenu en français. Pour faire simple un CMS permet de gérer de A à Z l'apparence et le contenu d'un site internet sans toucher au coté programmation, en utilisant une interface homme-machine. Il existe un très gand nombre de CMS disponible gratuitement (Jommla, Wordpress, Drupal, ...) mais dans notre cas c'est l'entreprise qui a réalisée le site internet qui a créée son propre CMS (wellligo) afin de pouvoir créer leur site plus rapidement.</div>
+
+            <h4>4 : La section contenu</h4>
+
+            <h5> Partie Accueil:</h5>
+
+                <img class ="screen" src="images/p2e4d.png"></img>
+
+            <p> Ce shéma fait le lien entre l'interface d'administration et le site, l'option indiquée dans l'impression d'écran de l'interface d'administration modifie la zone du site indiquée par l'impression d'écran reliée.</p>
+
+             <ul>
+                    <li><div class="numero"> 1 </div> : Permet de réaliser des modifications sur la galerie d'image de la page d'accueil. En cliquant dessus, nous arrivons sur cette page: </br></br> <img class="screen2" src="images/p2e5.png"></img>
+                     <div class="aSide"><p>Ici vous pouvez modifier chaque image de la galerie, sachant que les images sont rangées de façon à ce que la première image en haut soit la première image à apparaitre dans la galerie et que la dernière (en bas) soit la dernière à apparaitre dans la galerie.</p>
+                      <ul>
+                        <li><div class="numero"> 1 </div> : Ici vous pouvez remplacer l'image par une autre (pour savoir qelle image est concernée vous pouvez regarder à gauche où se trouve une miniature de l'image concernée), il  suffit d'appuyer sur parcourrir et de sélectionner la nouvelle image dans les dossiers de votre ordinateur.  </li>
+                    <li><div class="numero"> 2 </div> : Et ici vous pouvez modifier la légende, le texte sur l'image. </li>
+                    <li><div class="numero"> 3 </div> : Comme son nom l'indique gràce au bouton valider vous pouvez valider les modifications que vous avez fais pour quelles apparaissent sur le site. </li>
+                    <li><div class="numero"> 4 </div> : La croix permet elle de supprimer l'image concernée. </li>
+                    <li><div class="numero"> 5 </div> : Ces deux fléches permettent de changer la position à laquelle elle est dans le diaporama de la galerie. La fléche du bas va donc faire avncer l'image d'une place dans le diaporama et la fléche du abs la faire reculer d'une place dans le diaporama au contraire. </li>
+                
+                        </ul></div>
+
+                    </li>
+                    <li><div class="numero"> 2 </div> : Permet de mofifier le contenu du cadre central de la page daccueil (les différents paragraphes, images ...).
+                      
+                    <img  class="screen2" src="images/p2e6.png"></img>
+
+                       <ul>
+                    <li><div class="numero"> 1 </div> : Permet der changer la catégorie dans laquelle se situe la page, c'est à dire changer son emplacement dans le site. On pourrait par  exemple décider de mettre cette page dans la partie présentation si on le voulait. </li>
+                    <li><div class="numero"> 2 </div> : Ici on peut tout simplement changer le nom de la page, on pourrait si on voulait l'appeler "Chocolat", ça n'aurait bien évidemment aucun sens mais on pourrait quand même.</li>
+                    <li><div class="numero"> 3 </div> : Permet de voire les modifications faites en ouvrant le site dans un nouvel onglet. </li>
+                
+                </ul>
+
+                <p>Ensuite on peut faire des modifications sur le contenu lui même comme indiqué en dessous.</p>
+                      <img src="images/p2e7.png"></img>
+                    
+                    
+                    </li>
+               <p></p>
+                    <li><div class="numero"> 3 </div> : On a déjà retrouvé ces boutons plus tôt rappelez vous, mais ici ils n'auront pas vraiment d'utilité (donc on touche à rien S.V.P). </li>
+                
+                </ul>
+
+          </div>
+
+         
+
+          </div> 
+
+        </div>
+
+      </div>
+        
+    </body>
+</html>
